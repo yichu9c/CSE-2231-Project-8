@@ -1,0 +1,23 @@
+PROGRAM anotherTest IS
+
+  INSTRUCTION destroyEnemy IS
+     infect
+  END destroyEnemy
+  
+  INSTRUCTION turn IS
+    turnright
+    move
+  END turn
+
+  BEGIN
+  
+  WHILE true DO
+    
+    IF next-is-empty THEN
+      turn
+    ELSE
+      destroyEnemy
+    END 
+    one
+  END WHILE
+END anotherTest
